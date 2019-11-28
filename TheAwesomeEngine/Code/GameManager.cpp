@@ -32,14 +32,7 @@ void GameManager::Update()
 			EngineClear();
 			game.Update(time.DeltaTime());
 
-			if (GameIsOn())
-			{
-				spawn.SpawnEnemies(&game, time.DeltaTime(), 0.75f);
-			}
-			else
-			{
-				game.ClearList();
-			}
+			spawn.SpawnEnemies(&game, time.DeltaTime(), 0.75f);
 
 			game.Render();
 

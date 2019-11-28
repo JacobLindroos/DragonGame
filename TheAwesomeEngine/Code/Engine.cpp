@@ -27,13 +27,34 @@ bool fullscreen = true;
 bool windowed = false;
 
 static float _currentFrameNumber = 1;
+
 void EngineInitialize()
 {
-	SDL_Init(SDL_INIT_EVERYTHING);
-	TTF_Init();
+	if (SDL_Init(SDL_INIT_EVERYTHING) != 0)
+	{
+		std::cout << "SDL_Init error: " << SDL_GetError() << "\n";
+		EngineClose();
+	}
+
+	if (TTF_Init() != 0)
+	{
+		std::cout << "TTF_Init error: " << SDL_GetError() << "\n";
+		EngineClose();
+	}
 
 	_window = SDL_CreateWindow("THe Awesomest Engine Window", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, SCREEN_WIDTH, SCREEN_HEIGHT, windowed);
+	if (!_window)
+	{
+		std::cout << "SDL_Window error: " << SDL_GetError() << "\n";
+		EngineClose();
+	}
+
 	_renderer = SDL_CreateRenderer(_window, -1, 0);
+	if (!_renderer)
+	{
+		std::cout << "SDL_Renderer error: " << SDL_GetError() << "\n";
+		EngineClose();
+	}
 
 	bIsOpen = true;
 	gIsOn = true;
@@ -41,6 +62,7 @@ void EngineInitialize()
 	// Load standard font
 	StandardFont = TTF_OpenFont("Roboto.ttf", 24);
 }
+
 
 void EngineUpdate()
 {
@@ -80,11 +102,13 @@ void EngineUpdate()
 	SDL_Delay(5);
 }
 
+
 void EngineClear()
 {
 	SDL_SetRenderDrawColor(_renderer, 0, 0, 0, 255);
 	SDL_RenderClear(_renderer);
 }
+
 
 void EngineClose()
 {
@@ -99,20 +123,12 @@ void EngineDestroy()
 	SDL_Quit();
 }
 
+
 bool EngineIsOpen()
 {
 	return bIsOpen;
 }
 
-bool GameIsOn()
-{
-	return gIsOn;
-}
-
-void GameClose()
-{
-	gIsOn = false;
-}
 
 void EngineRenderSquare(float posX, float posY, int width, int height)
 {
@@ -121,21 +137,25 @@ void EngineRenderSquare(float posX, float posY, int width, int height)
 	SDL_RenderFillRectF(_renderer, &Square);
 }
 
+
 float EngineGetDeltaTime()
 {
 	return _frameDelta;
 }
+
 
 bool EngineGetKey(Key key)
 {
 	return keyStates[(int)key].keyIsPressed;
 }
 
+
 bool EngineGetKeyDown(Key key)
 {
 	InputState& state = keyStates[(int)key];
 	return state.keyIsPressed && state._frameNumber == _currentFrameNumber;
 }
+
 
 void EngineRenderTexture(float posX, float posY, int height, int width, const char* path)
 {
@@ -156,6 +176,7 @@ void EngineRenderTexture(float posX, float posY, int height, int width, const ch
 	SDL_DestroyTexture(texture);
 }
 
+
 void EngineRenderBackground(SDL_Rect* src, SDL_FRect* dest, const char* path)
 {
 	IMG_Init(IMG_INIT_PNG);
@@ -173,19 +194,17 @@ void EngineRenderBackground(SDL_Rect* src, SDL_FRect* dest, const char* path)
 	SDL_DestroyTexture(texture);
 }
 
+
 UIManager* GetUIManager()
 {
 	return _UIManager;
 }
 
+
 void SetUIManager(UIManager* uim)
 {
 	_UIManager = uim;
 }
-
-//Additional
-
-// Text stuff
 
 
 void EngineSetColor(uint8 Red, uint8 Green, uint8 Blue)
@@ -196,6 +215,7 @@ void EngineSetColor(uint8 Red, uint8 Green, uint8 Blue)
 	_currentColor.a = 255;
 }
 
+
 void EngineSetColor(unsigned int Color)
 {
 	_currentColor.r = (Color >> 24) & 0xFF;
@@ -204,6 +224,7 @@ void EngineSetColor(unsigned int Color)
 	_currentColor.a = Color & 0xFF;
 }
 
+
 void EngineDrawRect(int X, int Y, int Width, int Height)
 {
 	SDL_SetRenderDrawColor(_renderer, _currentColor.r, _currentColor.g, _currentColor.b, _currentColor.a);
@@ -211,6 +232,7 @@ void EngineDrawRect(int X, int Y, int Width, int Height)
 	SDL_Rect rect = { X, Y, Width, Height };
 	SDL_RenderFillRect(_renderer, &rect);
 }
+
 
 void EngineDrawString(int X, int Y, const char* String)
 {
@@ -230,6 +252,7 @@ void EngineDrawString(int X, int Y, const char* String)
 	SDL_FreeSurface(MsgSurface);
 	SDL_DestroyTexture(MsgTexture);
 }
+
 
 void EngineDrawStringFormat(int X, int Y, const char* String, ...)
 {

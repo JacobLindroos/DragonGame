@@ -74,12 +74,3 @@ void GameWorld::DestroyGameObjetc(GameObject* go)
 		}
 	}
 }
-
-void GameWorld::ClearList()
-{
-	//delete Objects;
-	//memset(Objects, 0, MAX_GAME_OBJECTS * (sizeof Objects[0]));
-
-	//std::fill(Objects, Objects + MAX_GAME_OBJECTS, nullptr);
-	//std::copy(Objects, Objects[MAX_GAME_OBJECTS], );
-}

@@ -7,44 +7,34 @@
 #include <cstdlib>
 #include <ctime>
 
-
-
 SpawnManager::SpawnManager()
-{
-
-}
+{}
 
 SpawnManager::~SpawnManager()
-{
-}
+{}
 
 void SpawnManager::SpawnEnemies(GameWorld* game, float deltaTime, float timeBetweenSpawns)
 {
-	std::cout << "yo bro, wtf" << std::endl;
+	spawnTimer += deltaTime;
 
+	if (spawnTimer > timeBetweenSpawns)
+	{
+		//generates a random value between 0-2 based upon the time since the application started,
+		//which gives a true random value!
+		srand(time(0));
+		int val = rand() % 3;
 
-		std::cout << "nah son" << std::endl;
+		//generates a random value between 650 - 1200 i x position.
+		float posX = (rand() % (1200 - 650)) + 650;
 
-		spawnTimer += deltaTime;
+		//spawns a enemy with randomly choosen movement- and shooting type, base on the random value int val variable have
+		game->SpawnGameObject(new Enemy(posX, -100.f,
+			val == 0 ? Enemy::MovementTypes::Circle : val == 1 ? Enemy::MovementTypes::Horizontal : Enemy::MovementTypes::Vertical,
+			val == 0 ? Enemy::ShootTypes::DoubleShot : val == 1 ? Enemy::ShootTypes::SingleShot : Enemy::ShootTypes::SpreadShot,
+			"Res/Ma_Man_Enemy.png"));
 
-		if (spawnTimer > timeBetweenSpawns)
-		{
-			//generates a random value between 0-2 based upon the time since the application started,
-			//which gives a true random value!
-			srand(time(0));
-			int val = rand() % 3;
-
-			//generates a random value between 650 - 1200 i x position.
-			float posX = (rand() % (1200 - 650)) + 650;
-
-			//spawns a enemy with randomly choosen movement- and shooting type, base on the random value int val variable have
-			game->SpawnGameObject(new Enemy(posX, -100.f,
-				val == 0 ? Enemy::MovementTypes::Circle : val == 1 ? Enemy::MovementTypes::Horizontal : Enemy::MovementTypes::Vertical,
-				val == 0 ? Enemy::ShootTypes::DoubleShot : val == 1 ? Enemy::ShootTypes::SingleShot : Enemy::ShootTypes::SpreadShot,
-				"Res/Ma_Man_Enemy.png"));
-			spawnTimer = 0;
-		}
-	
+		spawnTimer = 0;
+	}
 }
 
 

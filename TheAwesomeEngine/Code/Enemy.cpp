@@ -47,8 +47,6 @@ void Enemy::Update(float deltaTime)
 			CheckAmmuntion();
 		}
 	}
-
-
 	timer += deltaTime;
 }
 

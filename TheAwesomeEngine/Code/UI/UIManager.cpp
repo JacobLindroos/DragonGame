@@ -118,14 +118,10 @@ void UIManager::Render()
 
 	if (numLives<=0)
 	{
-		GameClose();
-		//EngineSetColor(0, 0, 0);
 		EngineDrawRect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
 
 		EngineDrawStringFormat((SCREEN_WIDTH/2), (SCREEN_HEIGHT/2)+50, "Score: %i", mScore);
 		EngineDrawStringFormat((SCREEN_WIDTH / 2)-12.5f, (SCREEN_HEIGHT/2)-50, "GAMÉ OVER");
 		EngineDrawStringFormat((SCREEN_WIDTH / 2)-33, (SCREEN_HEIGHT/2)+200, "Press Esc to quit");
-		
-
 	}
 }
