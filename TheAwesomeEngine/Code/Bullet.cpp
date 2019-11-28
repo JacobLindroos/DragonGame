@@ -12,7 +12,7 @@
 void Bullet::Update(float deltaTime)
 {
 
-	Bounds screenBounds = Bounds( 544, 0, 1360 , SCREEN_H);
+	Bounds screenBounds = Bounds(544, 0, 1360, SCREEN_H);
 
 	_posX += BULLET_SPEED * _dirX;
 	_posY += BULLET_SPEED * _dirY;
@@ -31,25 +31,28 @@ void Bullet::Update(float deltaTime)
 			continue;
 		}
 
-		if (IsA<Enemy>(goPtr) && _tag != "Enemy") 
+		if (IsA<Enemy>(goPtr) && _tag != "Enemy")
 		{
 			if (entityBoxCollider.CollidesWith(goPtr->entityBoxCollider)) {
 				_gameWorld->DestroyGameObjetc(goPtr);
-					_UImanager->UpdateScore(1);
+				_UImanager->UpdateScore(1);
 				_gameWorld->DestroyGameObjetc(this);
 
 				return;
 			}
 		}
 
+
 		if (IsA<Player>(goPtr) && _tag != "Player")
 		{
 			if (entityBoxCollider.CollidesWith(goPtr->entityBoxCollider))
 			{
 				_UImanager->UpdateLife();
-				if (_UImanager->numLives <=0)
+				if (_UImanager->numLives <= 0)
 				{
 					_gameWorld->DestroyGameObjetc(goPtr);
+
+					std::cout << "yuuuuuup" << std::endl;
 				}
 				_gameWorld->DestroyGameObjetc(this);
 				return;
@@ -118,7 +121,7 @@ bool Bullet::CheckCollision(SDL_Rect a, SDL_Rect b)
 	topB = b.y;
 	bottomB = b.y + b.h;
 
-	if (bottomA  <= topB)
+	if (bottomA <= topB)
 	{
 		return false;
 	}

@@ -25,7 +25,7 @@ private:
 	const float targetFramerate = 80;
 	const float frameDelay = 1000 / targetFramerate;
 	float frametime = 0;
-	
+
 	SDL_Event keyEvent;
 
 	GameWorld game;

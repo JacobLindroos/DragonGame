@@ -16,6 +16,7 @@ static TTF_Font* StandardFont = nullptr;
 static SDL_Color _currentColor = { 255,255,255,255 };
 
 static bool bIsOpen = true;
+static bool gIsOn = true;
 
 std::chrono::high_resolution_clock::time_point _lastFrameTime;
 static float _frameDelta = 0.f;
@@ -35,6 +36,7 @@ void EngineInitialize()
 	_renderer = SDL_CreateRenderer(_window, -1, 0);
 
 	bIsOpen = true;
+	gIsOn = true;
 
 	// Load standard font
 	StandardFont = TTF_OpenFont("Roboto.ttf", 24);
@@ -68,7 +70,7 @@ void EngineUpdate()
 		}
 	}
 	std::chrono::high_resolution_clock::time_point currentTime = std::chrono::high_resolution_clock::now();
-	_frameDelta = std::chrono::duration_cast<std::chrono::milliseconds>(currentTime - _lastFrameTime).count() * 1e-6f;//10 up the 6th  microsends in a second
+	_frameDelta = std::chrono::duration_cast<std::chrono::microseconds>(currentTime - _lastFrameTime).count() * 1e-6f;//10 up the 6th  microsends in a second
 
 	_lastFrameTime = currentTime;
 
@@ -100,6 +102,16 @@ void EngineDestroy()
 bool EngineIsOpen()
 {
 	return bIsOpen;
+}
+
+bool GameIsOn()
+{
+	return gIsOn;
+}
+
+void GameClose()
+{
+	gIsOn = false;
 }
 
 void EngineRenderSquare(float posX, float posY, int width, int height)

@@ -131,8 +131,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Code\Background.cpp" />
-    <ClCompile Include="Code\BezierPath.cpp" />
-    <ClCompile Include="Code\Borders.cpp" />
     <ClCompile Include="Code\Bullet.cpp" />
     <ClCompile Include="Code\Enemy.cpp" />
     <ClCompile Include="Code\Engine.cpp" />
@@ -141,7 +139,6 @@
     <ClCompile Include="Code\GameWorld.cpp" />
     <ClCompile Include="Code\Player.cpp" />
     <ClCompile Include="Code\SpawnManager.cpp" />
-    <ClCompile Include="Code\SpecialBullet.cpp" />
     <ClCompile Include="Code\Time.cpp" />
     <ClCompile Include="Code\UI\UIManager.cpp" />
     <ClCompile Include="main.cpp" />
@@ -160,10 +157,8 @@
     <ClInclude Include="Code\MathHelper.h" />
     <ClInclude Include="Code\Player.h" />
     <ClInclude Include="Code\SpawnManager.h" />
-    <ClInclude Include="Code\SpecialBullet.h" />
     <ClInclude Include="Code\Time.h" />
     <ClInclude Include="Code\Type.h" />
-    <ClInclude Include="Code\BezierPath.h" />
     <ClInclude Include="Code\UI\UIManager.h" />
     <ClInclude Include="Code\Vector.h" />
   </ItemGroup>

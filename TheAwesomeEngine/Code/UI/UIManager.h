@@ -12,7 +12,6 @@ public:
 	UIManager();
 	~UIManager();
 	//std::vector<std::unique_ptr<GameObject>> mUIElements;
-
 	const int MAX_LIVES = 5;
 	const int MIN_LIVES = 0;
 
@@ -28,4 +27,5 @@ public:
 
 	void Update();
 	void Render();
+
 };

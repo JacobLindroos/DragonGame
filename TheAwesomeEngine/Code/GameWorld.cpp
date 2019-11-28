@@ -1,5 +1,8 @@
 #include "GameWorld.h"
 #include "GameObject.h"
+#include <iostream>
+#include <algorithm>
+#include <iterator>
 
 GameWorld::GameWorld()
 {
@@ -51,7 +54,7 @@ void GameWorld::SpawnGameObject(GameObject* go)
 {
 	for (int i = 0; i < MAX_GAME_OBJECTS; i++)
 	{
-		if (Objects[ i] == nullptr)
+		if (Objects [i] == nullptr)
 		{
 			Objects[i] = go;
 			break;
@@ -70,4 +73,13 @@ void GameWorld::DestroyGameObjetc(GameObject* go)
 			break;
 		}
 	}
+}
+
+void GameWorld::ClearList()
+{
+	//delete Objects;
+	//memset(Objects, 0, MAX_GAME_OBJECTS * (sizeof Objects[0]));
+
+	//std::fill(Objects, Objects + MAX_GAME_OBJECTS, nullptr);
+	//std::copy(Objects, Objects[MAX_GAME_OBJECTS], );
 }

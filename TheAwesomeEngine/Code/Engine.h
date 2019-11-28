@@ -26,6 +26,10 @@ void EngineDestroy();
 
 bool EngineIsOpen();
 
+bool GameIsOn();
+
+void GameClose();
+
 void EngineRenderSquare(float posX, float posY, int width, int height);
 
 float EngineGetDeltaTime();

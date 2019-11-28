@@ -28,7 +28,10 @@ void UIManager::UpdateLife()
 
 void UIManager::UpdateScore(float multiplier)
 {
-	mScore += 100*multiplier;
+	if (numLives >0)
+	{
+		mScore += 100 * multiplier;
+	}
 }
 
 void UIManager::Update()
@@ -75,9 +78,6 @@ void UIManager::Render()
 
 		EngineRenderTexture(x, y, lifeItemSize, lifeItemSize, "Res/border.png");
 	}*/
-
-
-
 	/*for (size_t i = 0; i < MAX_LIVES; i++)
 	{
 		int x = 0;
@@ -91,8 +91,6 @@ void UIManager::Render()
 		EngineRenderTexture(x, y, lifeItemSize, lifeItemSize, "Res/border.png");
 	}*/
 
-
-
 	for (size_t i = 0; i < MAX_LIVES; i++)
 	{
 		int x = 0 + i * lifeItemSize + i * xMargin;;
@@ -105,11 +103,6 @@ void UIManager::Render()
 
 		EngineRenderTexture(x, y, lifeItemSize, lifeItemSize, "Res/border.png");
 	}
-
-
-
-
-
 	//for (size_t i = 0; i < numLives; i++)
 	//{
 	//	//EngineDrawRect(SCREEN_WIDTH - lifeItemSize - xMargin, i * lifeItemSize + i * xMargin, lifeItemSize, lifeItemSize);
@@ -122,4 +115,17 @@ void UIManager::Render()
 	//EngineDrawStringFormat(0, 250, "Score: %i", mScore);
 
 	EngineDrawStringFormat(xMargin, 50, "Score: %i", mScore);
+
+	if (numLives<=0)
+	{
+		GameClose();
+		//EngineSetColor(0, 0, 0);
+		EngineDrawRect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+
+		EngineDrawStringFormat((SCREEN_WIDTH/2), (SCREEN_HEIGHT/2)+50, "Score: %i", mScore);
+		EngineDrawStringFormat((SCREEN_WIDTH / 2)-12.5f, (SCREEN_HEIGHT/2)-50, "GAMÉ OVER");
+		EngineDrawStringFormat((SCREEN_WIDTH / 2)-33, (SCREEN_HEIGHT/2)+200, "Press Esc to quit");
+		
+
+	}
 }

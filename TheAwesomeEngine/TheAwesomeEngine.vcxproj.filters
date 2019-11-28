@@ -13,138 +13,179 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Obj Files">
+      <UniqueIdentifier>{f52ba765-a852-4f2d-8420-4038a01cb91c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dll Files">
+      <UniqueIdentifier>{eb8076ac-ab18-440f-9928-85857f443a45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Things we don%27t know">
+      <UniqueIdentifier>{fa7c3168-2930-4c49-abc9-0b29afa250e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ttf Files">
+      <UniqueIdentifier>{581054a2-10d0-4138-8ede-d275ac30e864}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Managers">
+      <UniqueIdentifier>{dd0a4b2a-a2c1-4387-845f-338d4407df37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entities">
+      <UniqueIdentifier>{4cd6075e-52e3-4360-a93f-6e2fe14585c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game systems">
+      <UniqueIdentifier>{04cba076-8adc-48b4-8fb1-3e027aaf8286}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game systems">
+      <UniqueIdentifier>{a31adfe2-f7f6-4f52-a8b4-54ebd1e830c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Entities">
+      <UniqueIdentifier>{e2fea01f-7e80-4a89-9a1c-85c7760a37a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Managers">
+      <UniqueIdentifier>{a97b23d4-f0ae-4c2e-a2d0-70ce488ce4ff}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Code\Engine.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Code\GameObject.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Code\GameWorld.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Code\Player.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Code\Bullet.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Code\Enemy.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Code\BezierPath.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Code\SpecialBullet.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Code\Borders.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Code\SpawnManager.cpp">
+      <Filter>Source Files\Managers</Filter>
     </ClCompile>
     <ClCompile Include="Code\UI\UIManager.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Managers</Filter>
     </ClCompile>
     <ClCompile Include="Code\GameManager.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Bullet.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Enemy.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\GameObject.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Player.cpp">
+      <Filter>Source Files\Entities</Filter>
     </ClCompile>
     <ClCompile Include="Code\Background.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Entities</Filter>
     </ClCompile>
-    <ClCompile Include="Code\SpawnManager.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Code\Engine.cpp">
+      <Filter>Source Files\Game systems</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\GameWorld.cpp">
+      <Filter>Source Files\Game systems</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files\Game systems</Filter>
     </ClCompile>
     <ClCompile Include="Code\Time.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Game systems</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Code\Engine.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Code\GameObject.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Code\GameWorld.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Code\Player.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Code\Key.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Code\Background.h">
+      <Filter>Header Files\Entities</Filter>
     </ClInclude>
     <ClInclude Include="Code\Bullet.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Entities</Filter>
     </ClInclude>
     <ClInclude Include="Code\Enemy.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Entities</Filter>
     </ClInclude>
-    <ClInclude Include="Code\Type.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Code\Player.h">
+      <Filter>Header Files\Entities</Filter>
     </ClInclude>
-    <ClInclude Include="Code\Collision.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Code\MathHelper.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Code\BezierPath.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Code\Vector.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Code\SpecialBullet.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Code\GameObject.h">
+      <Filter>Header Files\Game systems</Filter>
     </ClInclude>
     <ClInclude Include="Code\Borders.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Game systems</Filter>
     </ClInclude>
-    <ClInclude Include="Code\UI\UIManager.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Code\Collision.h">
+      <Filter>Header Files\Game systems</Filter>
     </ClInclude>
-    <ClInclude Include="Code\GameManager.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Code\Engine.h">
+      <Filter>Header Files\Game systems</Filter>
     </ClInclude>
-    <ClInclude Include="Code\Background.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Code\GameWorld.h">
+      <Filter>Header Files\Game systems</Filter>
     </ClInclude>
-    <ClInclude Include="Code\SpawnManager.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Code\Key.h">
+      <Filter>Header Files\Game systems</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\MathHelper.h">
+      <Filter>Header Files\Game systems</Filter>
     </ClInclude>
     <ClInclude Include="Code\Time.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Game systems</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Type.h">
+      <Filter>Header Files\Game systems</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Vector.h">
+      <Filter>Header Files\Game systems</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\UI\UIManager.h">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\GameManager.h">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\SpawnManager.h">
+      <Filter>Header Files\Managers</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-    <None Include="Debug\vc142.idb" />
-    <None Include="Debug\vc142.pdb" />
-    <None Include="SDL2.dll" />
-    <None Include="SDL2_image.dll" />
-    <None Include="SDL2_ttf.dll" />
-    <None Include="zlib1.dll" />
-    <None Include="libpng16-16.dll" />
+    <None Include="libpng16-16.dll">
+      <Filter>dll Files</Filter>
+    </None>
+    <None Include="SDL2.dll">
+      <Filter>dll Files</Filter>
+    </None>
+    <None Include="SDL2_image.dll">
+      <Filter>dll Files</Filter>
+    </None>
+    <None Include="SDL2_ttf.dll">
+      <Filter>dll Files</Filter>
+    </None>
+    <None Include="zlib1.dll">
+      <Filter>dll Files</Filter>
+    </None>
+    <None Include="packages.config">
+      <Filter>Things we don%27t know</Filter>
+    </None>
+    <None Include="Debug\vc142.idb">
+      <Filter>Things we don%27t know</Filter>
+    </None>
+    <None Include="Debug\vc142.pdb">
+      <Filter>Things we don%27t know</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <Object Include="Debug\Bullet.obj" />
-    <Object Include="Debug\Enemy.obj" />
-    <Object Include="Debug\Engine.obj" />
-    <Object Include="Debug\GameObject.obj" />
-    <Object Include="Debug\GameWorld.obj" />
-    <Object Include="Debug\main.obj" />
-    <Object Include="Debug\Player.obj" />
-    <Object Include="Debug\BezierPath.obj" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="Debug\TheAwesomeEngine.log" />
-  </ItemGroup>
-  <ItemGroup>
-    <Font Include="Roboto.ttf" />
+    <Object Include="Debug\BezierPath.obj">
+      <Filter>Obj Files</Filter>
+    </Object>
+    <Object Include="Debug\Bullet.obj">
+      <Filter>Obj Files</Filter>
+    </Object>
+    <Object Include="Debug\Enemy.obj">
+      <Filter>Obj Files</Filter>
+    </Object>
+    <Object Include="Debug\Engine.obj">
+      <Filter>Obj Files</Filter>
+    </Object>
+    <Object Include="Debug\GameObject.obj">
+      <Filter>Obj Files</Filter>
+    </Object>
+    <Object Include="Debug\GameWorld.obj">
+      <Filter>Obj Files</Filter>
+    </Object>
+    <Object Include="Debug\main.obj">
+      <Filter>Obj Files</Filter>
+    </Object>
+    <Object Include="Debug\Player.obj">
+      <Filter>Obj Files</Filter>
+    </Object>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Res\background.png">
@@ -180,5 +221,15 @@
     <Image Include="Res\skyCloudsSeemless_v003.png">
       <Filter>Resource Files</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Debug\TheAwesomeEngine.log">
+      <Filter>Things we don%27t know</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Roboto.ttf">
+      <Filter>ttf Files</Filter>
+    </Font>
   </ItemGroup>
 </Project>

@@ -21,7 +21,7 @@ public:
 	UIManager* GetUIManager() { return &uiManager; }
 	void SpawnGameObject(GameObject * go);
 	void DestroyGameObjetc(GameObject* go);
-
+	void ClearList();
 private:
 
 };

@@ -33,13 +33,18 @@ public:
 	void Update(float deltaTime) override;
 	void Render() override;
 
+	//Math for the circleBomb
 	int bulletCount = 25;
-
 	float angle = 2*M_PI / 25.f;
+
+	int shotgunBulletCount = 5;
+	float shotgunAngle = 2*M_PI / 12;
+
 	UIManager* UImanager;
 
-	float timer = 0.f;
-
+	float circleTimer = 0.f;
+	float flameTimer = 0.f;
+	float normalShootingTimer = 0.f;
 
 
 private:
