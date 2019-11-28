@@ -1,0 +1,16 @@
+﻿  SpawnManager.cpp
+C:\Users\Jacob.Lindroos\Desktop\NewDragonSDL-master\NewDragonSDL-master\TheAwesomeEngine\Code\Vector.h(65,13): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\Jacob.Lindroos\Desktop\NewDragonSDL-master\NewDragonSDL-master\TheAwesomeEngine\Code\Enemy.h(29,40): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jacob.Lindroos\Desktop\NewDragonSDL-master\NewDragonSDL-master\TheAwesomeEngine\Code\Enemy.h(29,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jacob.Lindroos\Desktop\NewDragonSDL-master\NewDragonSDL-master\TheAwesomeEngine\Code\Player.h(38,29): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Jacob.Lindroos\Desktop\NewDragonSDL-master\NewDragonSDL-master\TheAwesomeEngine\Code\SpawnManager.cpp(28,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Jacob.Lindroos\Desktop\NewDragonSDL-master\NewDragonSDL-master\TheAwesomeEngine\Code\SpawnManager.cpp(31,14): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+Debug\BezierPath.obj : warning LNK4042: object specified more than once; extras ignored
+Debug\Bullet.obj : warning LNK4042: object specified more than once; extras ignored
+Debug\Enemy.obj : warning LNK4042: object specified more than once; extras ignored
+Debug\Engine.obj : warning LNK4042: object specified more than once; extras ignored
+Debug\GameObject.obj : warning LNK4042: object specified more than once; extras ignored
+Debug\GameWorld.obj : warning LNK4042: object specified more than once; extras ignored
+Debug\main.obj : warning LNK4042: object specified more than once; extras ignored
+Debug\Player.obj : warning LNK4042: object specified more than once; extras ignored
+  TheAwesomeEngine.vcxproj -> C:\Users\Jacob.Lindroos\Desktop\NewDragonSDL-master\NewDragonSDL-master\TheAwesomeEngine\.\Build\TheAwesomeEngine.exe
