@@ -2,7 +2,7 @@
 
 GameManager::GameManager()
 {
-	background = new Background(560.f, 0.f, 800, 3200, "Res/skyCloudsSeemless_v003.png");
+	background = new Background(560.f, 0.f, 800, 3200, "Res/Clouds4.png");
 	player = new Player(928.f, 950.f, "Res/Ma_Man.png",Player::Normal,Player::None);
 }
 
