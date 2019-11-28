@@ -1,15 +1,1 @@
-﻿  GameManager.cpp
-C:\Users\Jacob.Lindroos\Desktop\GitHub Dragon\DragonGame\TheAwesomeEngine\Code\Player.h(38,29): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\Users\Jacob.Lindroos\Desktop\GitHub Dragon\DragonGame\TheAwesomeEngine\Code\Player.h(41,34): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\Users\Jacob.Lindroos\Desktop\GitHub Dragon\DragonGame\TheAwesomeEngine\Code\Vector.h(65,13): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-C:\Users\Jacob.Lindroos\Desktop\GitHub Dragon\DragonGame\TheAwesomeEngine\Code\Enemy.h(29,40): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Jacob.Lindroos\Desktop\GitHub Dragon\DragonGame\TheAwesomeEngine\Code\Enemy.h(29,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Jacob.Lindroos\Desktop\GitHub Dragon\DragonGame\TheAwesomeEngine\Code\GameManager.cpp(45,26): warning C4244: 'argument': conversion from 'float' to 'Uint32', possible loss of data
-Debug\Bullet.obj : warning LNK4042: object specified more than once; extras ignored
-Debug\Enemy.obj : warning LNK4042: object specified more than once; extras ignored
-Debug\Engine.obj : warning LNK4042: object specified more than once; extras ignored
-Debug\GameObject.obj : warning LNK4042: object specified more than once; extras ignored
-Debug\GameWorld.obj : warning LNK4042: object specified more than once; extras ignored
-Debug\main.obj : warning LNK4042: object specified more than once; extras ignored
-Debug\Player.obj : warning LNK4042: object specified more than once; extras ignored
-  TheAwesomeEngine.vcxproj -> C:\Users\Jacob.Lindroos\Desktop\GitHub Dragon\DragonGame\TheAwesomeEngine\.\Build\TheAwesomeEngine.exe
+﻿  TheAwesomeEngine.vcxproj -> C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\.\Build\TheAwesomeEngine.exe

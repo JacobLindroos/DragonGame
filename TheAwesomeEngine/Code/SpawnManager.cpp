@@ -31,7 +31,7 @@ void SpawnManager::SpawnEnemies(GameWorld* game, float deltaTime, float timeBetw
 		game->SpawnGameObject(new Enemy(posX, -100.f,
 			val == 0 ? Enemy::MovementTypes::Circle : val == 1 ? Enemy::MovementTypes::Horizontal : Enemy::MovementTypes::Vertical,
 			val == 0 ? Enemy::ShootTypes::DoubleShot : val == 1 ? Enemy::ShootTypes::SingleShot : Enemy::ShootTypes::SpreadShot,
-			"Res/Ma_Man_Enemy.png"));
+			"Res/Enemy Dragon.png"));
 
 		spawnTimer = 0;
 	}

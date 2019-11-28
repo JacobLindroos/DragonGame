@@ -120,13 +120,13 @@ void Player::Update(float deltaTime)
 		{
 			if (_st == Normal)
 			{
-				_gameWorld->SpawnGameObject(new Bullet(_posX + 16, _posY + 32 * _directionY, 0, -1, "Res/FireBall_1.png", "Player"));
+				_gameWorld->SpawnGameObject(new Bullet(_posX + 16, _posY + 32 * _directionY, 0, -1, "Res/Thingamajing.png", "Player"));
 			}
 			if (_st == Shotgun)
 			{
 				for (int i = 1; i <= (shotgunBulletCount); i++)
 				{
-					_gameWorld->SpawnGameObject(new Bullet(_posX, _posY, cos(i * shotgunAngle), sin(-i * shotgunAngle), "Res/FireBall_1.png", "Player"));
+					_gameWorld->SpawnGameObject(new Bullet(_posX, _posY, cos(i * shotgunAngle), sin(-i * shotgunAngle), "Res/Thingamajing.png", "Player"));
 				}
 			}
 			normalShootingTimer = 0;
@@ -136,7 +136,7 @@ void Player::Update(float deltaTime)
 	{
 		if (flameTimer > 0 && flameTimer < 2.f)
 		{
-			_gameWorld->SpawnGameObject(new Bullet(_posX + 16, _posY + 32 * _directionY, 0, -1, "Res/FireBall_1.png", "Player"));
+			_gameWorld->SpawnGameObject(new Bullet(_posX + 16, _posY + 32 * _directionY, 0, -1, "Res/Thingamajing.png", "Player"));
 		}
 		if (flameTimer >= 8.f)
 		{
@@ -150,8 +150,8 @@ void Player::Update(float deltaTime)
 		{
 			for (int i = 1; i <= (bulletCount - 1) * 0.5; i++)
 			{
-				_gameWorld->SpawnGameObject(new Bullet(_posX, _posY, cos(i * angle), sin(i * angle), "Res/Bullet.png", "Player"));
-				_gameWorld->SpawnGameObject(new Bullet(_posX, _posY, cos(-i * angle), sin(-i * angle), "Res/Bullet.png", "Player"));
+				_gameWorld->SpawnGameObject(new Bullet(_posX, _posY, cos(i * angle), sin(i * angle), "Res/Thingamajing.png", "Player"));
+				_gameWorld->SpawnGameObject(new Bullet(_posX, _posY, cos(-i * angle), sin(-i * angle), "Res/Thingamajing.png", "Player"));
 				circleTimer = 0;
 			}
 		}
