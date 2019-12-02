@@ -101,9 +101,6 @@
     <ClInclude Include="Code\Borders.h">
       <Filter>Header Files\Game systems</Filter>
     </ClInclude>
-    <ClInclude Include="Code\Collision.h">
-      <Filter>Header Files\Game systems</Filter>
-    </ClInclude>
     <ClInclude Include="Code\Engine.h">
       <Filter>Header Files\Game systems</Filter>
     </ClInclude>

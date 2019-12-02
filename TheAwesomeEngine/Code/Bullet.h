@@ -8,26 +8,21 @@
 
 class Bullet :public GameObject {
 public:
-
 	UIManager* _UImanager;
 
-	Bullet(float x, float y, float dirX, float dirY, const char* path, const char* tag): GameObject(x, y), _dirX(dirX), _dirY(dirY), _path(path), _tag(tag)
+	Bullet(float x, float y, float dirX, float dirY, const char* path, const char* shooter): GameObject(x, y), _dirX(dirX), _dirY(dirY), _path(path), _shooter(shooter)
 	{
 		_UImanager = GetUIManager();
 	}
 
 	const char* _path;
 
-	const char* _tag;
+	const char* _shooter;
 
 	void Update(float deltaTime) override;
 	void Render() override;
 
-	bool CheckCollision(SDL_Rect a, SDL_Rect b);
-
 private:
 	float _dirX;
 	float _dirY;
-
-	float lifetime = 2.f;
 };

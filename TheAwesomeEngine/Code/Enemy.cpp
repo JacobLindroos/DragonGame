@@ -121,18 +121,18 @@ void Enemy::CheckAmmuntion()
 	{
 		if (st == ShootTypes::SingleShot)
 		{
-			_gameWorld->SpawnGameObject(new Bullet(_posX + 16, _posY + 64 * _directionY, 0, _directionY,"Res/FireBall.png" , "Enemy"));
+			_gameWorld->SpawnGameObject(new Bullet(_posX + 16, _posY + 64 * _directionY, 0, _directionY,"Res/Enemybullet.png" , "Enemy"));
 		}
 		if (st == ShootTypes::DoubleShot)
 		{
-			_gameWorld->SpawnGameObject(new Bullet(_posX + 46, _posY + 64 * _directionY, 0, _directionY, "Res/FireBall.png", "Enemy"));
-			_gameWorld->SpawnGameObject(new Bullet(_posX -14, _posY + 64 * _directionY, 0, _directionY, "Res/FireBall.png", "Enemy"));
+			_gameWorld->SpawnGameObject(new Bullet(_posX + 46, _posY + 64 * _directionY, 0, _directionY, "Res/Enemybullet.png", "Enemy"));
+			_gameWorld->SpawnGameObject(new Bullet(_posX -14, _posY + 64 * _directionY, 0, _directionY, "Res/Enemybullet.png", "Enemy"));
 		}
 		if (st == ShootTypes::SpreadShot)
 		{
-			_gameWorld->SpawnGameObject(new Bullet(_posX + 26, _posY + 64 * _directionY, -1, _directionY, "Res/FireBall.png", "Enemy"));
-			_gameWorld->SpawnGameObject(new Bullet(_posX + 16, _posY + 64 * _directionY, 0, _directionY, "Res/FireBall.png", "Enemy"));
-			_gameWorld->SpawnGameObject(new Bullet(_posX - 6, _posY + 64 * _directionY, 1, _directionY, "Res/FireBall.png", "Enemy"));
+			_gameWorld->SpawnGameObject(new Bullet(_posX + 26, _posY + 64 * _directionY, -1, _directionY, "Res/Enemybullet.png", "Enemy"));
+			_gameWorld->SpawnGameObject(new Bullet(_posX + 16, _posY + 64 * _directionY, 0, _directionY, "Res/Enemybullet.png", "Enemy"));
+			_gameWorld->SpawnGameObject(new Bullet(_posX - 6, _posY + 64 * _directionY, 1, _directionY, "Res/Enemybullet.png", "Enemy"));
 		}
 		timer = 0;
 	}

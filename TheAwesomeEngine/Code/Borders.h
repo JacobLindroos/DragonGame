@@ -8,7 +8,7 @@ struct Bounds {
 
 	int height, y, width, x;
 
-	bool CollidesWith(const Bounds& other) const {
+	bool CollidesWith(const Bounds& other) const {  //AABB collision checking 
 		return other.x < x + width && other.x + other.width > x &&
 			other.y <y + height && other.y + other.height > y;
 	}

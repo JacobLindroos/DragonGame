@@ -66,7 +66,7 @@ Vector2 RotateVector(Vector2& vec, float angle) {
 	return Vector2((float)(vec.x * cos(radAngle) - vec.y * sin(radAngle)), (float)(vec.x * sin(radAngle) + vec.y * cos(radAngle)));
 }
 
-inline Vector2 Lerp(Vector2& start, Vector2& end, float time) {
+inline Vector2 Lerp(Vector2& start, Vector2& end, float time) { //Maththingys calculating fractions of a distance depenging on timew and the full distance
 	if (time <=0.0f)
 	{
 		return start;
@@ -83,7 +83,7 @@ inline Vector2 Lerp(Vector2& start, Vector2& end, float time) {
 	return start + dir * mag * time;
 }
 
-struct BezierCurve {
+struct BezierCurve { //How to mathimatically make a curve
 	Vector2 p0; //Start point
 	Vector2 p1; //Controll point for the start point 
 	Vector2 p2; //Controll point for the end point

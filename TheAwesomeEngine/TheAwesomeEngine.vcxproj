@@ -147,7 +147,6 @@
     <ClInclude Include="Code\Background.h" />
     <ClInclude Include="Code\Borders.h" />
     <ClInclude Include="Code\Bullet.h" />
-    <ClInclude Include="Code\Collision.h" />
     <ClInclude Include="Code\Enemy.h" />
     <ClInclude Include="Code\Engine.h" />
     <ClInclude Include="Code\GameManager.h" />

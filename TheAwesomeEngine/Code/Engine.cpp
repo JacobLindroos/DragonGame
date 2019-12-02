@@ -163,8 +163,10 @@ void EngineRenderTexture(float posX, float posY, int height, int width, const ch
 	SDL_Surface* tempSurface = IMG_Load(path);
 	SDL_Texture* texture = SDL_CreateTextureFromSurface(_renderer, tempSurface);
 
-	if (path == nullptr) {
-		puts("failed to find path!");
+	if (tempSurface == nullptr) {
+		puts("Failed to render texture!");
+		EngineClose();
+		return;
 	}
 
 	SDL_Rect dest = { posX, posY, width, height };
@@ -173,7 +175,7 @@ void EngineRenderTexture(float posX, float posY, int height, int width, const ch
 	SDL_RenderCopy(_renderer, texture, &src, &dest);
 
 	SDL_FreeSurface(tempSurface);
-	SDL_DestroyTexture(texture);
+	SDL_DestroyTexture(texture); 
 }
 
 
@@ -185,7 +187,8 @@ void EngineRenderBackground(SDL_Rect* src, SDL_FRect* dest, const char* path)
 
 	if (tempSurface == nullptr)
 	{
-		puts("failed to find path!");
+		puts("failed to render background!");
+		return;
 	}
 
 	SDL_RenderCopyF(_renderer, texture, src, dest);

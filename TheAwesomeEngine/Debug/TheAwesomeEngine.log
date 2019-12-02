@@ -1,1 +1,105 @@
-﻿  TheAwesomeEngine.vcxproj -> C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\.\Build\TheAwesomeEngine.exe
+﻿  Background.cpp
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Background.cpp(4,121): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  Bullet.cpp
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Background.cpp(4,137): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Vector.h(65,13): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Enemy.h(29,40): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Enemy.h(29,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Player.h(39,29): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Player.h(44,34): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Bullet.cpp(16,31): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Bullet.cpp(17,31): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Bullet.cpp(92,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Bullet.cpp(92,23): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Bullet.cpp(96,29): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Enemy.cpp
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Bullet.cpp(96,22): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Vector.h(65,13): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Enemy.h(29,40): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Enemy.h(29,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Enemy.cpp(7,24): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Enemy.cpp(8,24): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Enemy.cpp(59,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Enemy.cpp(59,23): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Enemy.cpp(63,29): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Enemy.cpp(63,22): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Enemy.cpp(72,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Enemy.cpp(73,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Enemy.cpp(75,10): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Enemy.cpp(76,10): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Enemy.cpp(90,14): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Enemy.cpp(94,11): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Enemy.cpp(95,17): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Enemy.cpp(108,14): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Enemy.cpp(124,49): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Enemy.cpp(128,49): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Enemy.cpp(129,49): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Enemy.cpp(133,49): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Enemy.cpp(134,49): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  GameManager.cpp
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Enemy.cpp(135,49): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Player.h(39,29): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Player.h(44,34): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Vector.h(65,13): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Enemy.h(29,40): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Enemy.h(29,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  GameObject.cpp
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\GameManager.cpp(45,26): warning C4244: 'argument': conversion from 'float' to 'Uint32', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\GameObject.cpp(4,47): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\GameObject.cpp(4,57): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\GameObject.cpp(8,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  GameWorld.cpp
+  Player.cpp
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\GameObject.cpp(8,21): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Player.h(39,29): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Player.h(44,34): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Player.cpp(59,46): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Player.cpp(63,48): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Player.cpp(67,48): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Player.cpp(71,48): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Player.cpp(111,62): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Player.cpp(111,50): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Player.cpp(117,52): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Player.cpp(117,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Player.cpp(127,61): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Player.cpp(127,49): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Player.cpp(148,51): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Player.cpp(148,44): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Player.cpp(149,51): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Player.cpp(149,44): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Player.cpp(167,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Player.cpp(167,23): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Player.cpp(170,29): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  SpawnManager.cpp
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Player.cpp(170,22): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Vector.h(65,13): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Enemy.h(29,40): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Enemy.h(29,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Player.h(39,29): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Player.h(44,34): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\SpawnManager.cpp(24,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  UIManager.cpp
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\SpawnManager.cpp(28,14): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\UI\UIManager.cpp(33,29): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\UI\UIManager.cpp(94,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\UI\UIManager.cpp(99,9): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\UI\UIManager.cpp(101,27): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\UI\UIManager.cpp(101,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\UI\UIManager.cpp(104,26): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\UI\UIManager.cpp(104,23): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  main.cpp
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\UI\UIManager.cpp(124,44): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Player.h(39,29): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Player.h(44,34): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Vector.h(65,13): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Enemy.h(29,40): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Generating Code...
+C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\Code\Enemy.h(29,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Debug\Bullet.obj : warning LNK4042: object specified more than once; extras ignored
+Debug\Enemy.obj : warning LNK4042: object specified more than once; extras ignored
+Debug\Engine.obj : warning LNK4042: object specified more than once; extras ignored
+Debug\GameObject.obj : warning LNK4042: object specified more than once; extras ignored
+Debug\GameWorld.obj : warning LNK4042: object specified more than once; extras ignored
+Debug\main.obj : warning LNK4042: object specified more than once; extras ignored
+Debug\Player.obj : warning LNK4042: object specified more than once; extras ignored
+  TheAwesomeEngine.vcxproj -> C:\Users\Grimm.Svenkerud\Documents\GitHubRepositories\DragonGame\TheAwesomeEngine\.\Build\TheAwesomeEngine.exe

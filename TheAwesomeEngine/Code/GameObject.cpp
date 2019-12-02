@@ -1,13 +1,7 @@
 #include "GameObject.h"
 #include "Engine.h"
 
-GameObject::GameObject(float x, float y):_posX(x), _posY(y)
-{
-	/*
-	_posX = posX;
-	_posY = posY;
-	*/
-}
+GameObject::GameObject(float x, float y):_posX(x), _posY(y){}
 
 void GameObject::Render()
 {
