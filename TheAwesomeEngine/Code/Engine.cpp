@@ -98,8 +98,6 @@ void EngineUpdate()
 
 	SDL_RenderPresent(_renderer);
 	EngineClear();
-
-	SDL_Delay(5);
 }
 
 
@@ -121,6 +119,8 @@ void EngineDestroy()
 	SDL_DestroyWindow(_window);
 	SDL_DestroyRenderer(_renderer);
 	SDL_Quit();
+	TTF_Quit();
+	IMG_Quit();
 }
 
 
@@ -157,7 +157,7 @@ bool EngineGetKeyDown(Key key)
 }
 
 
-void EngineRenderTexture(float posX, float posY, int height, int width, const char* path)
+void EngineRenderTexture(float posX, float posY, int width, int height, const char* path)
 {
 	IMG_Init(IMG_INIT_PNG);
 	SDL_Surface* tempSurface = IMG_Load(path);

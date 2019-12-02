@@ -4,6 +4,8 @@
 #include <algorithm>
 #include <iterator>
 
+#pragma region Con- & destructor
+
 GameWorld::GameWorld()
 {
 	for (int i = 0; i < MAX_GAME_OBJECTS; i++)
@@ -24,6 +26,10 @@ GameWorld::~GameWorld()
 	}
 }
 
+#pragma endregion
+
+
+//updates all game object´s update functions, if there is no game objects then continue
 void GameWorld::Update(float deltaTime)
 {
 	for (int i = 0; i < MAX_GAME_OBJECTS; i++)
@@ -37,6 +43,7 @@ void GameWorld::Update(float deltaTime)
 	uiManager.Update();
 }
 
+//render all game objects, if there is no game objects then continue
 void GameWorld::Render()
 {
 	for (int i = 0; i < MAX_GAME_OBJECTS; i++)
@@ -50,11 +57,12 @@ void GameWorld::Render()
 
 }
 
+//spawns game objects
 void GameWorld::SpawnGameObject(GameObject* go)
 {
 	for (int i = 0; i < MAX_GAME_OBJECTS; i++)
 	{
-		if (Objects [i] == nullptr)
+		if (Objects[i] == nullptr)
 		{
 			Objects[i] = go;
 			break;
@@ -63,6 +71,7 @@ void GameWorld::SpawnGameObject(GameObject* go)
 	go->_gameWorld = this;
 }
 
+//destroys game objects
 void GameWorld::DestroyGameObjetc(GameObject* go)
 {
 	for (int i = 0; i < MAX_GAME_OBJECTS; i++)

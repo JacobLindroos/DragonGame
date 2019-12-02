@@ -1,12 +1,12 @@
 #include "GameObject.h"
 #include "Engine.h"
 
-GameObject::GameObject(float x, float y):_posX(x), _posY(y){}
+//initialize the x- and y-position of the game object
+GameObject::GameObject(float x, float y) :_posX(x), _posY(y)
+{}
 
 void GameObject::Render()
-{
-	EngineRenderSquare(_posX, _posY, 64, 64);
-}
+{}
 
 
 

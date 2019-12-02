@@ -108,13 +108,13 @@ void Player::Update(float deltaTime)
 		{
 			if (_st == Normal) //If the shooting type is normal (aka. one bullet at a time)
 			{
-				_gameWorld->SpawnGameObject(new Bullet(_posX + 16, _posY + 32, 0, -1, "Res/Thingamajing.png", "Player"));
+				_gameWorld->SpawnGameObject(new Bullet(_posX + 16, _posY, 0, -1, "Res/Thingamajing.png", "Player"));
 			}
 			if (_st == Shotgun) //Or if the shooting type is shotgun (aka. shotgun duh)
 			{
 				for (int i = 1; i <= (shotgunBulletCount); i++)
 				{
-					_gameWorld->SpawnGameObject(new Bullet(_posX, _posY, cos(i * shotgunAngle), sin(-i * shotgunAngle), "Res/Thingamajing.png", "Player"));
+					_gameWorld->SpawnGameObject(new Bullet(_posX + 16, _posY, cos(i * shotgunAngle), sin(-i * shotgunAngle), "Res/Thingamajing.png", "Player"));
 				}
 			}
 			normalShootingTimer = 0; //Reset the timer
@@ -124,7 +124,7 @@ void Player::Update(float deltaTime)
 	{
 		if (flamethrowerFuel > 0.f)
 		{
-			_gameWorld->SpawnGameObject(new Bullet(_posX + 16, _posY + 32, 0, -1, "Res/Thingamajing.png", "Player"));
+			_gameWorld->SpawnGameObject(new Bullet(_posX + 16, _posY, 0, -1, "Res/Thingamajing.png", "Player"));
 			flamethrowerFuel -= EngineGetDeltaTime() * 10;
 		}
 	}

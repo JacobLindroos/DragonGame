@@ -34,7 +34,7 @@ bool EngineGetKey(Key key);
 
 bool EngineGetKeyDown(Key key);
 
-void EngineRenderTexture(float posX, float posY, int height, int width, const char* path);
+void EngineRenderTexture(float posX, float posY, int width, int height, const char* path);
 
 void EngineRenderBackground(SDL_Rect* src, SDL_FRect* dest, const char* path);
 

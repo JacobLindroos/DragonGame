@@ -2,7 +2,7 @@
 #include "GameObject.h"
 #include "UI/UIManager.h"
 
-#define BULLET_SPEED 20.F
+#define BULLET_SPEED 40.F
 #define BULLET_HEIGHT 20
 #define BULLET_WIDTH 20
 
